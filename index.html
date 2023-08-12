@@ -1,25 +1,44 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="fr" xmlns:og="http://ogp.me/ns#">
   <head>
+    <title>Nina Carducci, photographe professionnelle</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./assets/bootstrap/bootstrap.css" />
-    <link rel="stylesheet" href="./assets/style.css" />
+    <meta
+      name="description"
+      content="Nina Carducci, photographe à Bordeaux, expose son portfolio et propose des shootings photos, des retouches ou encore la création d'albums photos."
+    />
+    <meta charset="UTF-8" />
+    <meta
+      name="keywords"
+      content="Nina Carducci, bordeaux, photographe, portfolio, shooting photo, retouche photo, album photos, photographe professionnel, portraits, événements, concerts, séance photo"
+    />
+    <link rel="stylesheet" href="./assets/bootstrap/bootstrap.min.css" />
+    <link rel="stylesheet" href="./assets/style.min.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Inter&family=Spectral:ital,wght@0,400;1,300;1,400;1,800&display=swap"
       rel="stylesheet"
     />
-    <meta charset="UTF-8" />
-    <script src="./assets/bootstrap/bootstrap.bundle.js"></script>
+    <meta
+      property="og:title"
+      content="Article sur l'Open Graph par Referenseo"
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://nina-carducci.github.io/" />
+    <meta
+      property="og:image"
+      content="https://nina-carducci.github.io/assets/images/nina.png"
+    />
+    <meta property="og:site_name" content="Nina Carducci" />
+    <script src="./assets/bootstrap/bootstrap.bundle.min.js"></script>
     <script
       src="https://code.jquery.com/jquery-3.4.1.min.js"
       integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
       crossorigin="anonymous"
     ></script>
-    <script src="./assets/maugallery.js"></script>
-    <script src="./assets/scripts.js"></script>
-    <title>Nina Carducci</title>
+    <script src="./assets/maugallery.min.js"></script>
+    <script src="./assets/scripts.min.js"></script>
   </head>
   <body>
     <header class="top-header">
@@ -115,9 +134,13 @@
           </button>
         </div>
       </div>
-      <article id="about">
+      <article id="about" itemscope itemtype="https://schema.org/LocalBusiness">
         <div class="picture left">
-          <img src="./assets/images/nina.png" alt="Nina Carducci" />
+          <img
+            itemprop="image"
+            src="./assets/images/nina.png"
+            alt="Nina Carducci"
+          />
         </div>
         <div id="about-me">
           <h2 class="about-me__title">A propos de moi</h2>
@@ -138,6 +161,14 @@
             de la tendresse et de lumière à chaque fois que vous poserez les
             yeux sur vos photos.
           </p>
+          <ul>
+            <li itemprop="name">Nina Carducci</li>
+            <li itemprop="address">
+              68 avenue Alsace-Lorraine, 33200 Bordeaux
+            </li>
+            <li itemprop="telephone">05 56 67 78 89</li>
+            <li itemprop="openingHours">du lundi au vendredi de 10 h à 19 h</li>
+          </ul>
         </div>
       </article>
       <section id="gallery">
